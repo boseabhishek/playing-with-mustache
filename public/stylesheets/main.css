@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -64,3 +68,15 @@
     background-color: #555555;
     color: white;
 }
+
+table {
+border-collapse: collapse;
+width: 50%;
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}

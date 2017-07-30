@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <title>Game Of Thrones</title>
+    </head>
+    <body>
+    <h1>Game Of Thrones </h1>
+        <table border="1">
+            {{#house?}}
+            <tbody>
+                <tr>
+                    <td><b>House</b></td>
+                    <td>{{name}}</td>
+                </tr>
+                <tr>
+                    <td><b>Seat</b></td>
+                    <td>{{seat}}</td>
+                </tr>
+                <tr>
+                    <td valign="top"><b>Members</b></td>
+                    <td valign="top">
+                    {{#members}}
+                       <li>{{.}}</li>
+                    {{/members}}
+                    </td>
+                </tr>
+            </tbody>
+            {{/house?}}
+        </table>
+    </body>
+</html>

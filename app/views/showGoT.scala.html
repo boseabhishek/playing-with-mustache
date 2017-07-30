@@ -1,0 +1,27 @@
+@(house: Option[House])
+
+
+@house.map{ h =>
+<h1>Game Of Thrones </h1>
+<table border="1">
+    <tbody>
+    <tr>
+        <td><b>House</b></td>
+        <td>@h.name</td>
+    </tr>
+    <tr>
+        <td><b>Seat</b></td>
+        <td>@h.seat</td>
+    </tr>
+    <tr>
+        <td><b>Members</b></td>
+        <td valign="top">
+        @h.members.map { m =>
+        <ul>@m</ul>
+        }
+        </td>
+    </tr>
+   </tbody>
+</table>
+
+}
